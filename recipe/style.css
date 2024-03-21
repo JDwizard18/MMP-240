@@ -1,3 +1,19 @@
 body{background-color: rgba(149, 70, 2, 0.763);
 border: solid 13px ; 
 }
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif sans-serif; 
+    color:burlywood
+    Font-size: 1.7rem; /* 27px */
+    line-height: 1.2em;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+p{
+    line-height: 1.4em;
+}
+

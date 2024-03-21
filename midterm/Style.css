@@ -1,0 +1,21 @@
+body{
+    background-color: white;
+}
+
+
+#wrapper{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 1em;
+}
+
+header{
+       background-color: white;
+       background-image: url("Star wars visons season 2 PS edit.png");
+       background-repeat: no-repeat;
+       background-position: top left;
+
+}
+
