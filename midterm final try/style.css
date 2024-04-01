@@ -1,0 +1,36 @@
+/* Set overall background colors */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Left half (white) */
+.left-half {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Right half (black) */
+.right-half {
+    background-color: black;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text styles */
+.blue-text {
+    color: blue;
+    font-size: 24px;
+}
+
+.red-text {
+    color: red;
+    font-size: 24px;
+}

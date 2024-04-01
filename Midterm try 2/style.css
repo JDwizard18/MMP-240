@@ -3,26 +3,32 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
 .container {
-    display: flex;
-    height: 100vh;
+    height: 100%;
+    background:
+    url("SWV-unified-background.png") no-repeat center ;
+    background-size: cover;
 }
-.left {
-    flex: 1;
-    background-color: white;
-    color: blue;
-    padding: 20px;
-}
-.right {
-    flex: 1;
-    background-color: black;
-    color: red;
-    padding: 20px;
-}
+
 .centered {
     text-align: center;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
+.col-left{
+    width: auto; float: left; color: blue; font-weight: bold;
+    text-align: center; margin: auto; border-radius: auto; background: white;
+    width: 48%;}
+
+ .col-right{
+    width: auto; float: right; color: red; font-weight: bold;
+    text-align: center; margin: auto; border-radius: auto; background: black;
+    float:right;
+    width: 50%; }	
+    
+p{ font-size: 20px; }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half White and Half Black Page with Images</title>
+    <style>
+        /* Set overall background colors */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Left half (white) */
+        .left-half {
+            background-color: white;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Right half (black) */
+        .right-half {
+            background-color: black;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Text styles */
+        .blue-text {
+            color: blue;
+            font-size: 24px;
+        }
+
+        .red-text {
+            color: red;
+            font-size: 24px;
+        }
+
+
+     /* Image styles */
+     .image {
+            max-width: 80%; /* Restrict image size to 40% */
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="left-half">
+        <p class="blue-text">Hello World</p>
+        <img class="image" src="Star wras visions seasoon 1 croped.png" alt="Left Image">
+    </div>
+    <div class="right-half">
+        <p class="red-text">Hi</p>
+        <img class="image" src="Star wars visons season 2 PS edit.png" alt="Right Image">
+    </div>
+</body>
+</html>
