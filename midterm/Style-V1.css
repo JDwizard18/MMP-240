@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background-image.jpg'); /* Replace with your background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.episode-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    color: blue;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 1000px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.episode-image {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.episode-description {
+    flex: 2;
+}
+
+h1 {
+    color: blue;
+    font-size: 36px;
+     margin-bottom: 10px;
+     position: relative;
+     left: 100px; /* Adjust as needed */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
