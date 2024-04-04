@@ -3,25 +3,31 @@ body {
     padding: 0;
     background-image: url('Star-wars-visions-poster-season\ 1.png'); /* Replace with your background image */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     font-family: Arial, sans-serif;
+}
+
+.Episodes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .episode-box {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     color: blue;
-    border-radius: 10px;
-    margin: 20px;
-    max-width: 500px;
+    border-radius: 5px;
+    margin: 10px;
+    max-width: 650px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .episode-image {
     flex: 1;
-    max-width: 300px;
+    max-width: 350px;
     margin-right: 20px;
 }
 
@@ -31,18 +37,18 @@ body {
 
 h1 {
     color: blue;
-    font-size: 36px;
+    font-size: 30px;
      margin-bottom: 10px;
      position: relative;
      left: 100px; /* Adjust as needed */
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.;
 }
