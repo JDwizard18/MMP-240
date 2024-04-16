@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Courses</title>
+    <link rel="stylesheet" href="wifreframe_page1.css">
+
+</head>
+<body>
+    <h1>College Courses</h1>
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search for courses...">
+    </div>
+    <div class="course-list">
+        <ul id="course-list">
+            <!-- Course listings will be dynamically added here -->
+        </ul>
+    </div>
+    <script>
+        // Sample course data (replace with actual data)
+        const courses = [
+            { code: "COMP101", name: "Introduction to Computer Science" },
+            { code: "MATH201", name: "Calculus I" },
+            { code: "PHYS301", name: "Physics for Engineers" },
+            // Add more courses...
+        ];
+
+        // Get references to HTML elements
+        const searchInput = document.getElementById("search-input");
+        const courseList = document.getElementById("course-list");
+
+        // Function to filter courses based on search input
+        function filterCourses() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const filteredCourses = courses.filter(course =>
+                course.code.toLowerCase().includes(searchTerm) ||
+                course.name.toLowerCase().includes(searchTerm)
+            );
+
+            // Clear existing course list
+            courseList.innerHTML = "";
+
+            // Add filtered courses to the list
+            filteredCourses.forEach(course => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `${course.code} - ${course.name}`;
+                courseList.appendChild(listItem);
+            });
+        }
+
+        // Event listener for search input
+        searchInput.addEventListener("input", filterCourses);
+
+        // Initial filter (show all courses)
+        filterCourses();
+    </script>
+</body>
+</html>

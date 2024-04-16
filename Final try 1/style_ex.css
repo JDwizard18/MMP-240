@@ -1,0 +1,23 @@
+/* Table of content
+
+1.Resets
+2.Page level styles
+3.Typography
+4.utility Styles
+5.Header and top navigation
+6.Program Navigation
+7.homepage content
+8.Program pages
+9.Media queries for larger viewpoints
+
+*/ 
+
+/* ******* 1. Resets ******* */
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+/* 2. Page level styles */
