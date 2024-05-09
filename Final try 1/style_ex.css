@@ -15,9 +15,343 @@
 /* ******* 1. Resets ******* */
 
 *{
-    margin:0;
-    padding:0;
-    border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 /* 2. Page level styles */
+
+html{
+    font-size: 20px; 
+    /*root font size*/
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5em;
+    margin: 0.5rem;
+}
+
+#wrapper{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+input{
+ border: solid 1px black;
+    padding: 3px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4{
+    margin-bottom: 1em;
+}
+
+
+/******** 3.typography ******** */
+
+h1{
+    font-size: 1.5rem;
+    line-height: 1em;
+} 
+
+
+/******** 4. Utilities ******** */
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.large-text{
+    font-size: larger;
+}
+
+.img-reponsive{
+   width: 100%; 
+}
+
+float-right{
+    float: right;
+}
+
+
+
+
+/* ******** 5.header and top navigation ******** */
+
+header{
+    position: relative;
+}
+
+h1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+#top-menu{
+    display: none;
+    padding: 0.5em;
+    border: solid 1px black;
+    background-color: white;
+    clear: right;
+    position: absolute;
+    right: 0;
+    top:28px;
+
+}
+
+#top-menu ul{
+    list-style-type: none;
+}
+
+
+
+/* ******** 6. program Navigation ******** */
+
+nav ul {
+    list-style-type: none;
+}
+
+li.dropdown{
+    border-bottom: solid 1 px black;
+}
+
+li.dropdown ul{
+    display: none;
+}
+
+li.dropdown:hover ul{
+    display: block;
+}
+
+.dropdown a{
+    display: block;
+    padding: 5px;
+    color: black; 
+    text-decoration: none;
+}
+
+.dropdown li a{
+    color: gray;
+
+}
+
+.dropdown li a:hover{
+    color: maroon
+
+}
+
+.expand{
+    float: right;
+}
+
+
+
+/* ******** 7. Homepage content ******** */
+
+.banner{
+    padding: 6em 2em;
+    background-image: url("images/queens.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2em 0;
+}
+
+.banner a{
+    display: block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    text-shadow: 2px 2px 2px #000;
+    background-color: rgba(0, 0, 0, 0.5) ;
+}
+
+/* ********* 8.Program pages ******** */
+
+.program-title {
+    margin-top: 1em;
+}
+
+.program-layout a {
+    color: #000;
+    text-decoration: none; 
+}
+
+.program-layout h2,
+.program-layout h3,
+.program-layout h4 {
+    font-size: smaller;
+    margin: 0;
+}
+
+.program-layout h3 {
+    text-transform: uppercase;
+}
+
+.program-card {
+    background-color: transparent;
+    transition-property: background-color box-shadow transform;
+    transition-duration: 1s;
+    border-radius: 10px;
+}
+
+.program-card:hover {
+    background-color: #e6f3ff;
+    box-shadow: 5px 5px 7px #999;
+    transform: scale(1.02) rotate(0.5deg);
+}
+
+.card-body {
+    padding: 0.5em;
+}
+
+.program-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* ******** 9. Media queries for large viewports ******* */
+
+    @media (min-width:768px) {
+
+    .program-nav ul{
+       display: flex;
+       justify-content: space-between;
+    }
+    
+    
+    .program-nav li{
+    width: 30%;
+    position: relative;
+    }
+    
+    
+    .program-nav li li{ /* these ones are ones that dropdown, so the text fits the box content size*/
+       width: 100%;
+    }
+    
+    
+    
+    
+    .dropdown{
+       width: 30%;
+       position: relative;
+     
+      
+    }
+    .dropdown ul{
+       display: block;
+       position: absolute;
+       background-color: rgb(254, 250, 244);
+       border: solid rgb(144, 177, 201);
+       padding: 5px;
+       width: 100%;
+      
+    }
+    .program-layout img{
+       width: 100%;
+    }
+    .program-layout{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+      
+       grid-gap: 1rem;
+       font-size: smaller;
+      
+      
+      
+      
+      
+     
+      
+    }
+    
+    
+    h2{
+      
+       margin-left: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    .card{
+       /*flex: 1 0 auto;  flex-grow; yes flex-shrink;no flex-basis;original width*/
+     
+    margin-top: 30px;
+      border: 1px solid rgb(152, 78, 14);
+      background-color: blanchedalmond;
+     transition-property: background-color box-shadow transform;
+     border-radius: 8px;
+     margin-bottom: 20px;
+    
+    
+    }
+    
+    
+    .card-body{
+       margin-left: 20px;
+    }
+    
+    
+    .card:hover{
+      transition-duration: 1s;
+      background-color: rgb(246, 247, 173);
+      box-shadow: 1px 2px 1px rgb(75, 67, 55);
+      transform: scale(1.02);
+    }
+    
+    
+    a{
+    text-decoration: none;
+    color: gray;
+    }
+    
+    
+    a:hover{
+    text-decoration: underline;
+    color: black;
+    }
+    
+    
+    .img-card
+    {
+       width: 100%;
+       border-radius: 8px;
+    
+    
+      
+    } 
+    
+    #top-menu {
+        display: flex;
+        border: none;
+        position: static;
+        }
+
+    #top- menu ul {
+        display: flex;
+    }
+
+    #top-menu li {
+        margin-right: 1 em;
+    }
+
+    .menu-icon { 
+        display: none;
+    
+    }
+    
+
+}/*closing media querie */
+    
+
+
