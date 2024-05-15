@@ -2,25 +2,15 @@
 
 1.Resets
 2.Page level styles
-
 3.Typography
-
 4.utility Styles
-
 5.Header and top navigation
-
-
 6.Program Navigation
 7.homepage content
 8.Program pages
 9.Media queries for larger viewpoints
 
 */ 
-  /* Add styles for the fixed blue bar */
-  body {
-    margin: 0;
-    padding: 0;
-}
 
 
 /* ******* 1. Resets ******* */
@@ -47,6 +37,7 @@ body{
 #wrapper{
    max-width: 1200px;
    margin-top: 100px;
+   margin: 0 auto;
 }
 
 input{
@@ -95,10 +86,6 @@ float-right{
 
 /* ******** 5.header and top navigation ******** */
 
-li {
-    "margin-left: 2em;"
-}
-
 header{
     position: relative;
     display: flex;justify-content: space-between;
@@ -127,6 +114,7 @@ h1 a {
 }
 
 /* Add styles for the fixed blue bar */
+
 body {
     margin: 0;
     padding: 0;
@@ -152,6 +140,7 @@ body {
     display: flex;
     list-style-type: none;
 }
+
 
 
 /* ******** 6. program Navigation ******** */
@@ -193,53 +182,6 @@ li.dropdown:hover ul{
     float: right;
 }
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: blue;
-    color: white;
-    padding: 20px;
-    font-size: 16px;
-    border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: blue;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
 
 
 /* ******** 7. Homepage content ******** */
@@ -305,8 +247,6 @@ li.dropdown:hover ul{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
-
 
 /* ******** 9. Media queries for large viewports ******* */
 
@@ -379,8 +319,8 @@ li.dropdown:hover ul{
        /*flex: 1 0 auto;  flex-grow; yes flex-shrink;no flex-basis;original width*/
      
     margin-top: 30px;
-      border: 1px solid rgb(152, 78, 14);
-      background-color: blanchedalmond;
+      border: 1px solid rgb(225, 214, 7);
+      background-color: #0033a1;
      transition-property: background-color box-shadow transform;
      border-radius: 8px;
      margin-bottom: 20px;
@@ -396,7 +336,7 @@ li.dropdown:hover ul{
     
     .card:hover{
       transition-duration: 1s;
-      background-color: rgb(246, 247, 173);
+      background-color: #5b8af0;
       box-shadow: 1px 2px 1px rgb(75, 67, 55);
       transform: scale(1.02);
     }
@@ -444,3 +384,6 @@ li.dropdown:hover ul{
     
 
 }/*closing media querie */
+    
+
+
