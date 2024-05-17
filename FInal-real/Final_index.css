@@ -97,7 +97,7 @@ float-right{
 /* ******** 5.header and top navigation ******** */
 
 li {
-    "margin-left: 2em;"
+    margin-left: 2em;
 }
 
 header{
@@ -350,19 +350,13 @@ li.dropdown:hover ul{
     .program-layout img{
        width: 100%;
     }
+
     .program-layout{
        display: grid;
        grid-template-columns: repeat(4, 1fr);
       
        grid-gap: 1rem;
        font-size: smaller;
-      
-      
-      
-      
-      
-     
-      
     }
     
     
@@ -370,9 +364,6 @@ li.dropdown:hover ul{
       
        margin-left: 20px;
     }
-    
-    
-    
     
     
     
@@ -417,7 +408,8 @@ li.dropdown:hover ul{
     
     .img-card
     {
-       width: 100%;
+        max-width: 100%;
+        height: auto;
        border-radius: 8px;
     
     

@@ -61,7 +61,27 @@ h1{
     line-height: 1em;
 } 
 
+h2 {
+    color: #0033a1;
+}
 
+h4 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+h6 {
+    color: white;
+}
+
+.card p {
+    color: white;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
 /******** 4. Utilities ******** */
 
 .flex-container{
@@ -93,7 +113,7 @@ header{
 }
 
 h1 a {
-    color: #000;
+    color: white;
     text-decoration: none;
 }
 
@@ -128,6 +148,10 @@ body {
     width: 100%;
     z-index: 1000; /* Ensure it appears above other content */
     
+}
+
+.pagetitle {
+    background-color:  #0033a1;
 }
 
 .fixed-bar h1 {
@@ -258,9 +282,13 @@ li.dropdown:hover ul{
     border-top-right-radius: 10px;
 }
 
-/* ******** 9. Media queries for large viewports ******* */
 
-    @media (min-width:768px) {
+ 
+
+
+
+/* ******** 9. Media queries for large viewports ******* */
+@media (min-width:768px) {
 
     .program-nav ul{
        display: flex;
@@ -329,7 +357,7 @@ li.dropdown:hover ul{
        /*flex: 1 0 auto;  flex-grow; yes flex-shrink;no flex-basis;original width*/
      
     margin-top: 30px;
-      border: 1px solid rgb(225, 214, 7);
+      border: 1px solid rgb(152, 78, 14);
       background-color: #0033a1;
      transition-property: background-color box-shadow transform;
      border-radius: 8px;
@@ -346,8 +374,8 @@ li.dropdown:hover ul{
     
     .card:hover{
       transition-duration: 1s;
-      background-color: #5b8af0;
-      box-shadow: 1px 2px 1px rgb(75, 67, 55);
+      background-color: rgb(246, 247, 173);
+      box-shadow: 1px 2px 1px rgb(31, 30, 30);
       transform: scale(1.02);
     }
     
@@ -392,10 +420,5 @@ li.dropdown:hover ul{
     
     }
     
-  .main-menu li {
-    margin-right:1em;
-  }
+
 }/*closing media querie */
-    
-
-
