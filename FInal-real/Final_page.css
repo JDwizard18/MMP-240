@@ -76,11 +76,13 @@ h2 {
 .card h4 a {
     color: white;
     margin-left: 1rem;
+    text-align: center;
   }
 
 h5 {
     color: white;
     margin-left: 1rem;
+    text-align: center;
 }
 
 h6 {
