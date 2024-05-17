@@ -150,6 +150,11 @@ h2 a{
     list-style-type: none;
 }
 
+li a{
+    text-decoration: none;
+    color: gray;
+    }
+
 /* Add styles for the fixed blue bar */
 
 body {
@@ -355,8 +360,44 @@ max-width: 100%; height: auto;max-width: 100%; height: auto;
         color: black;
     }
 
+    /* ******** 8.5. grid layout ******* */
+.program-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* columns # */
+    gap: 20px; /* Gap between grid items */
+  }
+
+  .program-layout {
+    gap: 20px;
+     }
+
 /* ******** 9. Media queries for large viewports ******* */
-@media (min-width:768px) {
+
+  @media screen and (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  
+
+  .program-layout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* # of columns on mobile */
+    gap: 20px; /* Gap between grid items */
+  }
+
+ 
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  }
+
+  .cell img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .program-nav {
+    margin-top: 115px;
+}
 
     .program-nav ul{
        display: flex;
@@ -373,7 +414,6 @@ max-width: 100%; height: auto;max-width: 100%; height: auto;
     .program-nav li li{ /* these ones are ones that dropdown, so the text fits the box content size*/
        width: 100%;
     }
-    
     
     
     
@@ -397,16 +437,10 @@ max-width: 100%; height: auto;max-width: 100%; height: auto;
     }
     .program-layout{
        display: grid;
-       grid-template-columns: repeat(3, 1fr);
       
        grid-gap: 1rem;
        font-size: smaller;
       
-    
-
-
-
-     
       
     }
     
@@ -415,18 +449,11 @@ max-width: 100%; height: auto;max-width: 100%; height: auto;
       
        margin-left: 20px;
     }
+
     
     
     
     
-    
-    
-    
-    
-    a{
-    text-decoration: none;
-    color: gray;
-    }
     
     
     a:hover{
@@ -463,5 +490,5 @@ max-width: 100%; height: auto;max-width: 100%; height: auto;
     
     }
     
-
-}/*closing media querie */
+}
+/*closing media querie */

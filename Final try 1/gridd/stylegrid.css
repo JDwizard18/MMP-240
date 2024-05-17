@@ -89,7 +89,7 @@ h1{
    width: 100%; 
 }
 
-.float-right{
+float-right{
     float: right;
 }
 
@@ -183,7 +183,7 @@ li.dropdown:hover ul{
 }
 
 .dropdown li a{
-    color: rgb(172, 172, 172);
+    color: gray;
 
 }
 
@@ -309,11 +309,41 @@ li.dropdown:hover ul{
     border-top-right-radius: 10px;
 }
 
+.program-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap: 20px; /* Gap between grid items */
+  }
 
+  .card {
+    grid-row: span 2; /* Spans two rows */
+    grid-column: auto; /* Automatically placed in columns */
+  }
+
+  .program-layout {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  }
+
+  .services-container {
+    grid-template-rows: auto; /* Automatically adjust row height */
+  }
+
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  }
+
+  .cell img {
+    max-width: 100%;
+    height: auto;
+  }
 
 /* ******** 9. Media queries for large viewports ******* */
-
-    @media (min-width:768px) {
 
     .program-nav ul{
        display: flex;
@@ -330,8 +360,6 @@ li.dropdown:hover ul{
     .program-nav li li{ /* these ones are ones that dropdown, so the text fits the box content size*/
        width: 100%;
     }
-    
-    
     
     
     .dropdown{
@@ -353,14 +381,6 @@ li.dropdown:hover ul{
        width: 100%;
     }
 
-    .program-layout{
-       display: grid;
-       grid-template-columns: repeat(4, 1fr);
-      
-       grid-gap: 1rem;
-       font-size: smaller;
-    }
-    
     
     h2{
       
@@ -378,8 +398,6 @@ li.dropdown:hover ul{
      transition-property: background-color box-shadow transform;
      border-radius: 8px;
      margin-bottom: 20px;
-    
-    
     }
     
     
@@ -408,13 +426,10 @@ li.dropdown:hover ul{
     }
     
     
-    .img-card
-    {
+    .img-card {
         max-width: 100%;
         height: auto;
        border-radius: 8px;
-    
-    
       
     } 
     
@@ -438,4 +453,4 @@ li.dropdown:hover ul{
     }
     
 
-}/*closing media querie */
+/*closing media querie */
