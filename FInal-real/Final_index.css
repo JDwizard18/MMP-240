@@ -47,7 +47,7 @@ body{
 
 #wrapper{
    max-width: 1200px;
-   margin-top: 100px;
+   margin-top: 105px;
    margin-left: 30px;
    
 }
@@ -73,6 +73,18 @@ h1{
     line-height: 1em;
 } 
 
+    p {
+    font-size: larger;
+    font-style: bold;
+    color: #000;
+    }
+
+   D{
+        font-size: 2rem;
+        color: darkblue;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 
 /******** 4. Utilities ******** */
 
@@ -99,7 +111,8 @@ h1{
 /* ******** 5.header and top navigation ******** */
 
 li {
-    margin-left: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 header{
@@ -137,7 +150,7 @@ body {
 
 .fixed-bar {
     background-color:  #0033a1; /* Blue color */
-    position: fixed; height: 100px;
+    position: fixed; height: 103px;
     top: 0;
     left: 0;
     width: 100%;
@@ -158,6 +171,8 @@ body {
 
 
 /* ******** 6. program Navigation ******** */
+
+
 
 nav ul {
     list-style-type: none;
@@ -239,7 +254,7 @@ li.dropdown:hover ul{
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/* Changes the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color:rgb(246, 247, 173);
 }
@@ -249,7 +264,7 @@ li.dropdown:hover ul{
 
 .banner{
     padding: 6em 2em;
-    background-image: url("images/queens.webp");
+    background-image: url("Images/Queens-College_hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2em 0;
@@ -265,56 +280,19 @@ li.dropdown:hover ul{
     background-color: rgba(0, 0, 0, 0.5) ;
 }
 
-/* ********* 8.Program pages ******** */
+/* ********* 8.grid ******** */
 
-.program-title {
-    margin-top: 1em;
+.program-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px; /* Adjust the gap as needed */
 }
-
-.program-layout a {
-    color: #000;
-    text-decoration: none; 
-}
-
-.program-layout h2,
-.program-layout h3,
-.program-layout h4 {
-    font-size: smaller;
-    margin: 0;
-}
-
-.program-layout h3 {
-    text-transform: uppercase;
-}
-
-.program-card {
-    background-color: transparent;
-    transition-property: background-color box-shadow transform;
-    transition-duration: 1s;
-    border-radius: 10px;
-}
-
-.program-card:hover {
-    background-color: #e6f3ff;
-    box-shadow: 5px 5px 7px #999;
-    transform: scale(1.02) rotate(0.5deg);
-}
-
-.card-body {
-    padding: 0.5em;
-}
-
-.program-card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
 
 /* ******** 9. Media queries for large viewports ******* */
 
     @media (min-width:768px) {
 
+        
     .program-nav ul{
        display: flex;
        justify-content: space-between;
@@ -353,13 +331,6 @@ li.dropdown:hover ul{
        width: 100%;
     }
 
-    .program-layout{
-       display: grid;
-       grid-template-columns: repeat(4, 1fr);
-      
-       grid-gap: 1rem;
-       font-size: smaller;
-    }
     
     
     h2{
